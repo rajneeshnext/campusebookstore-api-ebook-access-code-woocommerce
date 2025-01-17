@@ -24,7 +24,7 @@ function custom_wc_order_generate_access_code( $order_id, $order ) {
           $campusbookstore_productID = get_post_meta( $product_id, 'campusbookstore_sku' ,true );      
           
           if($campusbookstore_productID!=""){
-             $url = "https://campusebookstore.com/services.asmx/PurchaseProduct?APIKey=UWOHVPELGEYZBOYYYASYFVHCMFMVRNFKJQGBXWKBQMGCELXYKC&ProductID=$campusbookstore_productID";
+             $url = "https://campusebookstore.com/services.asmx/PurchaseProduct?APIKey=xxxxxx&ProductID=$campusbookstore_productID";
 
               //$xml = simplexml_load_string($data); 
               $xml_data = file_get_contents($url);
